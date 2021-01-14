@@ -1,0 +1,44 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Random Person Chooser</h1>
+    <body>
+    {% if person %}
+        Random person: {{ person.name }} ({{ person.nick }})
+    {% endif %}
+    {% if not person %}
+        No people in database!
+    {% endif %}
+    <form action="" method="get">
+{#        {% csrf_token %}#}
+        <input type="submit" value="Draw again">
+    </form>
+    <form action="" method="post">
+{#        {% csrf_token %}#}
+        <input type="submit" value="Remove all">
+        <h3>Registered people:</h3>
+    </form>
+    <table style="width:40%">
+      <tr>
+        <th>Name</th>
+        <th>Nick</th>
+      </tr>
+        {% for p in people %}
+            <tr>
+                <td>{{ p.name }}</td>
+                <td>{{ p.nick }}</td>
+            </tr>
+        {%  endfor %}
+    </table>
+    <br>
+  <form action="" method="post">
+{#      {% csrf_token %}#}
+      <label for="Name">Person name:</label>
+        <input id="name" type="text" name="name" value="">
+      <label for="Nick">Nick:</label>
+        <input id="nick" type="text" name="nick" value="">
+        <input type="submit" value="Add new person">
+  </form>
+</body>
+
+{% endblock %}

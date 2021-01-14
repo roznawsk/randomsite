@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Random Integer</h1>
+  <form action="" method="get">
+    <label for="Lower bound">Lower bound:</label>
+    <input id="lower_bound" type="number" name="lower_bound_field" value={{ lower_bound }}>
+{#    <input type="submit" value="OK">#}
+  <label for="Upper bound">Upper bound:</label>
+    <input id="upper_bound" type="number" name="upper_bound_field" value={{ upper_bound }}>
+    <input type="submit" value="Get my number!">
+  </form>
+    Your random integer: {{  rand_int }}
+
+{% endblock %}

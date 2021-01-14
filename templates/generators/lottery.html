@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Number lottery game</h1>
+  <form action="" method="get">
+    <label for="Total number of balls">Total number of balls:</label>
+    <input id="total_balls" type="number" name="total_balls" value={{ total_balls }}>
+  <label for="Number of drawn balls">Number of drawn balls:</label>
+    <input id="drawn_balls" type="number" name="drawn_balls" value={{ drawn_balls }}>
+    <input type="submit" value="Get my numbers!">
+  </form>
+    Your random integers: {{  rand_balls }}
+
+{% endblock %}
