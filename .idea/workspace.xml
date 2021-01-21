@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1d05866-0b6d-44f5-8ca8-5b42edc25003" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/generators/coin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/rand/res/1plnawers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/rand/res/1plnrewers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/generators/guesser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rand/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rand/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rand/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rand/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rndsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rndsite/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_generic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/generators/coin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/generators/coin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,6 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/rand/res" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -46,6 +53,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Przemek\PycharmProjects\rndsite\static\rand\res" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="rndsite" type="Python.DjangoServer" factoryName="Django server">
@@ -88,7 +100,7 @@
       <workItem from="1610309761719" duration="464000" />
       <workItem from="1610651876781" duration="1420000" />
       <workItem from="1610899058911" duration="37000" />
-      <workItem from="1611248442911" duration="1956000" />
+      <workItem from="1611248442911" duration="4594000" />
     </task>
     <servers />
   </component>
@@ -108,25 +120,29 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1609980056474" />
-    <state width="1877" height="314" key="GridCell.Tab.0.bottom" timestamp="1611250885333">
+    <state width="1877" height="314" key="GridCell.Tab.0.bottom" timestamp="1611251590274">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.bottom/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611250885333" />
-    <state width="1877" height="314" key="GridCell.Tab.0.center" timestamp="1611250885333">
+    <state width="1877" height="314" key="GridCell.Tab.0.bottom/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611251590274" />
+    <state width="1877" height="314" key="GridCell.Tab.0.center" timestamp="1611251590274">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.center/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611250885333" />
-    <state width="1877" height="314" key="GridCell.Tab.0.left" timestamp="1611250885333">
+    <state width="1877" height="314" key="GridCell.Tab.0.center/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611251590274" />
+    <state width="1877" height="314" key="GridCell.Tab.0.left" timestamp="1611251590273">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.left/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611250885333" />
-    <state width="1877" height="314" key="GridCell.Tab.0.right" timestamp="1611250885333">
+    <state width="1877" height="314" key="GridCell.Tab.0.left/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611251590273" />
+    <state width="1877" height="314" key="GridCell.Tab.0.right" timestamp="1611251590274">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.right/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611250885333" />
+    <state width="1877" height="314" key="GridCell.Tab.0.right/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611251590274" />
     <state x="656" y="403" key="com.intellij.ide.util.TipDialog" timestamp="1610899083908">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="656" y="403" key="com.intellij.ide.util.TipDialog/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1610899083908" />
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1611254270088">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611254270088" />
   </component>
 </project>

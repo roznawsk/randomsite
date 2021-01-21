@@ -1,7 +1,7 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-  <h1>Random Integer</h1>
+  <h1>Coin toss</h1>
   <form action="" method="get">
     <label for="Coin quantity">Coins quantity:</label>
     <input id="coin_q" type="number" name="coin_q" value={{ coin_q }}>
@@ -9,7 +9,16 @@
   </form>
     Coins:
     {% for coin in coins %}
-     {{  coin }}
+     {% if coin == 0 %}
+         O
+{#         {% load static %}#}
+{#        <img src="{% static 'rand/res/1plnawers.png' %}" alt="1pln">#}
+        {% endif %}
+    {% if coin == 1 %}
+        R
+{#     {% load static %}#}
+{#        <img src="{% static 'rand/res/1plnrewers.png' %}" alt="1pln">#}
+    {% endif %}
     {% endfor %}
 
 {% endblock %}

@@ -171,8 +171,25 @@ def coin(request):
     print(req)
     if req:
         coin_q = int(req['coin_q'])
-        coins = random.choices(['O', 'R'], k=coin_q)
+        coins = random.choices([0, 1], k=coin_q)
     else:
         coin_q = 1
         coins = ''
     return render(request, 'generators/coin.html', {'coin_q': coin_q, 'coins': coins})
+
+
+def guesser(request):
+    req = request.GET
+    print(req)
+    if req:
+        lower_bound = int(req['lower_bound_field'])
+        upper_bound = int(req['upper_bound_field'])
+        user_num = int(req['user_num'])
+        rand_int = random.randint(lower_bound, upper_bound)
+    else:
+        lower_bound = 0
+        upper_bound = 10
+        user_num = lower_bound
+        rand_int = ''
+    return render(request, 'generators/guesser.html', {'lower_bound': lower_bound, 'upper_bound': upper_bound,
+                                                       'rand_int': rand_int, 'user_num': user_num})

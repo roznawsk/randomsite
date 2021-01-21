@@ -11,4 +11,5 @@ urlpatterns = [
     path('group_randomizer/', views.group_randomizer, name='group_randomizer'),
     path('elements_draw/', views.elements_draw, name='elements_draw'),
     path('coin/', views.coin, name='coin'),
+    path('guesser/', views.guesser, name='guesser')
 ]
