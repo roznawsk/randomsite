@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Random Integer</h1>
+  <form action="" method="get">
+    <label for="Coin quantity">Coins quantity:</label>
+    <input id="coin_q" type="number" name="coin_q" value={{ coin_q }}>
+    <input type="submit" value="GO">
+  </form>
+    Coins:
+    {% for coin in coins %}
+     {{  coin }}
+    {% endfor %}
+
+{% endblock %}

@@ -164,3 +164,15 @@ def group(request):
         person = random.choice(people)
 
     return render(request, 'generators/person.html', {'people': people, 'person': person})
+
+
+def coin(request):
+    req = request.GET
+    print(req)
+    if req:
+        coin_q = int(req['coin_q'])
+        coins = random.choices(['O', 'R'], k=coin_q)
+    else:
+        coin_q = 1
+        coins = ''
+    return render(request, 'generators/coin.html', {'coin_q': coin_q, 'coins': coins})
