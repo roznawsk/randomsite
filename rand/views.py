@@ -62,6 +62,80 @@ def lottery(request):
                                                        'rand_balls': rand_balls})
 
 
+def dice_throw(request):
+    rolls = []
+    req = request.GET
+    print(req)
+    def roll_many(sides, times):
+        for _ in range(times):
+            roll = randint(1, sides)
+            rolls.append(roll)
+            print(roll)
+    if req:
+        sides = int(req['how many sides'])
+        times = int(req['how many times'])
+        roll_many(sides, times)
+    else:
+        sides = 6
+        times = 2
+        roll_many(sides, times)
+    return render(request, 'generators/dice_throw.html',{'how many sides':sides, 'how many times':times})
+
+
+def group_randomizer(request):
+    people = []
+    to_add = ''
+    req = request.GET
+    print(req)
+    if req:
+        while to_add != 'NO':
+            to_add = str(req['Add person. To stop write NO'])
+            people.append(to_add)
+        print(people)
+        people = people[:-1]
+        number_of_teams = int(req['How many teams?'])
+        number_people = len(people)
+        while number_people > 0 and number_of_teams > 0:
+            team = random.sample(people, int(number_people/number_of_teams))
+            for x in team:
+                people.remove(x)
+                number_people -= int(number_people / number_of_teams)
+                number_of_teams -= 1
+                print(team)
+
+    else:
+        people = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"]
+        number_of_teams = 3
+        number_people = len(people)
+        team = random.sample(people, int(number_people/number_of_teams))
+        for x in team:
+            people.remove(x)
+            number_people -= int(number_people/number_of_teams)
+            number_of_teams -= 1
+            print(team)
+    return render(request, 'generators/group_randomizer.html',{'Add person. To stop write NO':to_add,'How many teams?':number_of_teams})
+
+
+def elements_draw(request):
+    req = request.GET
+    print(req)
+    items = []
+    add_item = ''
+    if req:
+        while add_item != 'NO':
+            add_item = str(req['Add person. To stop write NO'])
+            items.append(add_item)
+        number_of_items = int(req["How many items?"])
+        random_items = random.sample(items, number_of_items)
+        print(random_items)
+    else:
+        items = ["koc", "termos", "kawa", "sitko", "zabawka", "nóż"]
+        number_of_items = 2
+        random_items = random.sample(items, number_of_items)
+        print(random_items)
+    return render(request, 'generators/elements_draw.html',{'Add item. To stop write NO':add_item,"How many items?":number_of_items})
+
+
 @csrf_exempt
 def group(request):
     people = None
