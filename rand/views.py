@@ -58,7 +58,7 @@ def lottery(request):
         total_balls = 49
         drawn_balls = 6
         rand_balls = ''
-    return render(request, 'generators/lottery.html', {'total_balls' : total_balls, 'drawn_balls': drawn_balls,
+    return render(request, 'generators/lottery.html', {'total_balls': total_balls, 'drawn_balls': drawn_balls,
                                                        'rand_balls': rand_balls})
 
 
@@ -66,20 +66,22 @@ def dice_throw(request):
     rolls = []
     req = request.GET
     print(req)
+
     def roll_many(sides, times):
         for _ in range(times):
-            roll = randint(1, sides)
+            roll = random.randint(1, sides)
             rolls.append(roll)
             print(roll)
+
     if req:
-        sides = int(req['how many sides'])
-        times = int(req['how many times'])
+        sides = int(req['sides'])
+        times = int(req['times'])
         roll_many(sides, times)
     else:
         sides = 6
         times = 2
         roll_many(sides, times)
-    return render(request, 'generators/dice_throw.html',{'how many sides':sides, 'how many times':times})
+    return render(request, 'generators/dice_throw.html', {'sides': sides, 'times': times, 'result': rolls})
 
 
 def group_randomizer(request):
@@ -96,7 +98,7 @@ def group_randomizer(request):
         number_of_teams = int(req['How many teams?'])
         number_people = len(people)
         while number_people > 0 and number_of_teams > 0:
-            team = random.sample(people, int(number_people/number_of_teams))
+            team = random.sample(people, int(number_people / number_of_teams))
             for x in team:
                 people.remove(x)
                 number_people -= int(number_people / number_of_teams)
@@ -107,13 +109,14 @@ def group_randomizer(request):
         people = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"]
         number_of_teams = 3
         number_people = len(people)
-        team = random.sample(people, int(number_people/number_of_teams))
+        team = random.sample(people, int(number_people / number_of_teams))
         for x in team:
             people.remove(x)
-            number_people -= int(number_people/number_of_teams)
+            number_people -= int(number_people / number_of_teams)
             number_of_teams -= 1
             print(team)
-    return render(request, 'generators/group_randomizer.html',{'Add person. To stop write NO':to_add,'How many teams?':number_of_teams})
+    return render(request, 'generators/group_randomizer.html',
+                  {'Add person. To stop write NO': to_add, 'How many teams?': number_of_teams})
 
 
 def elements_draw(request):
@@ -133,7 +136,8 @@ def elements_draw(request):
         number_of_items = 2
         random_items = random.sample(items, number_of_items)
         print(random_items)
-    return render(request, 'generators/elements_draw.html',{'Add item. To stop write NO':add_item,"How many items?":number_of_items})
+    return render(request, 'generators/elements_draw.html',
+                  {'Add item. To stop write NO': add_item, "How many items?": number_of_items})
 
 
 @csrf_exempt

@@ -1,0 +1,18 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Dice throw</h1>
+  <form action="" method="get">
+    <label for="Sides">How many sides?:</label>
+    <input id="sides" type="number" name="sides" value={{ sides }}>
+{#    <input type="submit" value="OK">#}
+  <label for="Times">How many times?:</label>
+    <input id="times" type="number" name="times" value={{ times }}>
+    <input type="submit" value="Get my numbers!">
+  </form>
+    Dices:
+    {% for dice in result %}
+     {{ dice }}
+    {% endfor %}
+
+{% endblock %}

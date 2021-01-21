@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1d05866-0b6d-44f5-8ca8-5b42edc25003" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/rand/res/1plnawers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/rand/res/1plnrewers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/generators/guesser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/generators/dice_throw.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rand/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rand/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rand/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rand/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rndsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rndsite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_generic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/generators/coin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/generators/coin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +25,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1miYH17ToS8rvz8eNapZksN2S2w" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -100,7 +95,7 @@
       <workItem from="1610309761719" duration="464000" />
       <workItem from="1610651876781" duration="1420000" />
       <workItem from="1610899058911" duration="37000" />
-      <workItem from="1611248442911" duration="4594000" />
+      <workItem from="1611248442911" duration="5349000" />
     </task>
     <servers />
   </component>
@@ -120,26 +115,42 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1609980056474" />
-    <state width="1877" height="314" key="GridCell.Tab.0.bottom" timestamp="1611251590274">
+    <state width="1877" height="314" key="GridCell.Tab.0.bottom" timestamp="1611254926574">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.bottom/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611251590274" />
-    <state width="1877" height="314" key="GridCell.Tab.0.center" timestamp="1611251590274">
+    <state width="1877" height="314" key="GridCell.Tab.0.bottom/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611254926574" />
+    <state width="1877" height="314" key="GridCell.Tab.0.center" timestamp="1611254926573">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.center/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611251590274" />
-    <state width="1877" height="314" key="GridCell.Tab.0.left" timestamp="1611251590273">
+    <state width="1877" height="314" key="GridCell.Tab.0.center/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611254926573" />
+    <state width="1877" height="314" key="GridCell.Tab.0.left" timestamp="1611254926573">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.left/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611251590273" />
-    <state width="1877" height="314" key="GridCell.Tab.0.right" timestamp="1611251590274">
+    <state width="1877" height="314" key="GridCell.Tab.0.left/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611254926573" />
+    <state width="1877" height="314" key="GridCell.Tab.0.right" timestamp="1611254926574">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1877" height="314" key="GridCell.Tab.0.right/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611251590274" />
+    <state width="1877" height="314" key="GridCell.Tab.0.right/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611254926574" />
+    <state x="161" y="38" width="1552" height="927" key="MergeDialog" timestamp="1611254900728">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="161" y="38" width="1552" height="927" key="MergeDialog/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611254900728" />
+    <state x="672" y="295" key="MultipleFileMergeDialog" timestamp="1611254900762">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="672" y="295" key="MultipleFileMergeDialog/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611254900762" />
     <state x="656" y="403" key="com.intellij.ide.util.TipDialog" timestamp="1610899083908">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="656" y="403" key="com.intellij.ide.util.TipDialog/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1610899083908" />
+    <state x="769" y="496" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611254828593">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="769" y="496" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611254828593" />
+    <state x="673" y="371" key="git4idea.merge.GitPullDialog" timestamp="1611254799479">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="673" y="371" key="git4idea.merge.GitPullDialog/1920.116.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1611254799479" />
     <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1611254270088">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
