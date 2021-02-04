@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Elements draw</h1>
+  <form action="" method="get">
+    <label for="add_item">Add items:</label>
+    <input id="add_item" type="text" name="add_item" value={{ add_item }}>
+{#    <input type="submit" value="OK">#}
+  <label for="number_of_items">How many items?:</label>
+    <input id="number_of_items" type="number" name="number_of_items" value={{ number_of_items }}>
+    <input type="submit" value="Get my numbers!">
+  </form>
+    Your items are: {{ random_items }}
+
+{% endblock %}

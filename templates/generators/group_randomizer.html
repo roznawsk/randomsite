@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Group randomizer</h1>
+  <form action="" method="get">
+    <label for="to_add">Add people:</label>
+    <input id="to_add" type="text" name="to_add" value={{ to_add }}>
+{#    <input type="submit" value="OK">#}
+  <label for="number_of_teams">How many teams?:</label>
+    <input id="number_of_teams" type="number" name="number_of_teams" value={{ number_of_teams }}>
+    <input type="submit" value="Get my numbers!">
+  </form>
+    Your teams are:
+     {{ team }}
+
+{% endblock %}
